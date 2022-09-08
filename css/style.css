@@ -1,0 +1,102 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.header {
+    padding: 0.2rem 0.5rem;
+    margin: 0;
+    font-size: 90%;
+    white-space: nowrap;
+    background: #ffffff;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(137, 137, 137, 0.2);
+    padding-bottom: 2em;
+}
+
+ul {
+    list-style-image: url("../images/bullet.png");
+}
+
+/* row=entete avec le bouton acces charte*/
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.row .column1,
+.column2 {
+    flex: 0 1 50%;
+    align-self: center;
+    padding: 0.5em;
+}
+
+.column2 {
+    padding-bottom: 5%;
+    display: block;
+    text-align: center;
+}
+
+.charte {
+    background-color: rgb(207, 0, 0);
+    color: white;
+    border-radius: 0.4em;
+}
+
+.liste {
+    padding: 0.7em 1em;
+    margin: 0;
+    font-size: 90%;
+    background: #ffffff;
+    border: 1px solid #E1E1E1;
+    border-radius: 0.6em;
+    margin: 2em;
+    /* creation container flexbox */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 10px 20px rgba(137, 137, 137, 0.2);
+}
+
+/* child container */
+.liste h4,
+li {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.randombot {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+/* Larger than phablet (also point when grid becomes active) 
+reponsive pour le bouton */
+@media (max-width: 550px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row .column1,
+    .column2 {
+        flex: 0 1 90%;
+    }
+
+    .column2 {
+        padding-bottom: 0em;
+    }
+
+}
+
+/* display none pour faire disparaitre.
+si deja en display none, faire apparaitre */
