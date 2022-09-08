@@ -80,6 +80,10 @@ li {
     padding: 2em;
 }
 
+span {
+    font-size: x-small;
+}
+
 /* Larger than phablet (also point when grid becomes active) 
 reponsive pour le bouton */
 @media (max-width: 550px) {
