@@ -1,8 +1,9 @@
 // code a copier 4 fois pour 4 liste a cacher
+// creation des variables avec let ... = doc ect 
 let zoneaclique = document.getElementById("zoneaclique");
 let listearetirer = document.getElementById("listearetirer");
 
-
+// fonction click sur une zone definie
 zoneaclique.addEventListener("click", () => {
     if (getComputedStyle(listearetirer).display != "none") {
         listearetirer.style.display = "none";
@@ -46,3 +47,4 @@ zoneaclique4.addEventListener("click", () => {
         listearetirer4.style.display = "flex";
     }
 })
+// fin des fonctions JS pour cacher les listes
