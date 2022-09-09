@@ -18,6 +18,10 @@ ul {
     list-style-image: url("../images/bullet.png");
 }
 
+span {
+    font-size: x-small;
+}
+
 /* row=entete avec le bouton acces charte*/
 .row {
     display: flex;
@@ -74,15 +78,13 @@ li {
     align-self: auto;
 }
 
-.randombot {
+#randombot {
     display: flex;
     justify-content: center;
     padding: 2em;
 }
 
-span {
-    font-size: x-small;
-}
+
 
 /* Larger than phablet (also point when grid becomes active) 
 reponsive pour le bouton */
@@ -98,6 +100,21 @@ reponsive pour le bouton */
 
     .column2 {
         padding-bottom: 0em;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .row {
+        margin-top: 5em;
+    }
+
+    .container h4 {
+        margin-top: 0.6em;
     }
 
 }
