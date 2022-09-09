@@ -51,14 +51,52 @@ zoneaclique4.addEventListener("click", () => {
 // bouton pour generer un prenom random au survol
 
 let prenom = [
-    "theo",
-    "nicolas",
-    "ludovic",
-    "mickael",
-]
-var min = 1;
-var max = 18;
+    'Paul',
 
-var random = Math.floor(Math.random() * (max - min)) + min;
+    'Floriane',
+
+    'Matthieu',
+
+    'Theo',
+
+    'Eric',
+
+    'Josselin',
+
+    'Philippe',
+
+    'Johann',
+
+    'Florian',
+
+    'Michael',
+
+    'Safae',
+
+    'Nicolas',
+
+    'Ludovic',
+
+    'Mouss',
+
+    'Rony',
+
+    'Etienne Etourdi',
+
+    'Etienne Entrainant',
+
+    'Soeli'
+]
+var min = 0;
+var max = 17;
+
+var randomNumber = Math.floor(Math.random() * 18);
+// console.log(randomNumber)
+// sortir un prenom avec la fonction "random" par rapport a l'index du tableau
+
+prenom[randomNumber];
+console.log(prenom[randomNumber])
+
+
 
 
