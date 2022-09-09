@@ -48,7 +48,6 @@ zoneaclique4.addEventListener("click", () => {
     }
 })
 // fin des fonctions JS pour cacher les listes
-// bouton pour generer un prenom random au survol
 
 let prenom = [
     'Paul',
