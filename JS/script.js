@@ -78,5 +78,8 @@ let randomButton = document.getElementById("random")
 randomButton.addEventListener("click", () => {
     var randomNumber = Math.floor(Math.random() * 18);
     randomButton.innerHTML = prenom[randomNumber];
-    // setTimeout(randomButton.innerHTML = prenom["RANDOM APPRENANT"], 3000);
+    setTimeout(function () {
+        randomButton.innerHTML = "RANDOM APPRENANT";
+    }, 3000)
+    //setTimeout(randomButton.innerHTML = "RANDOM APPRENANT", 3000);
 })
