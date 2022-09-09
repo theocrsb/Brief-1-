@@ -90,13 +90,10 @@ let prenom = [
 var min = 0;
 var max = 17;
 
-var randomNumber = Math.floor(Math.random() * 18);
-// console.log(randomNumber)
-// sortir un prenom avec la fonction "random" par rapport a l'index du tableau
 
-prenom[randomNumber];
-console.log(prenom[randomNumber])
-
-
-
-
+let randomButton = document.getElementById("random")
+//  var randomNumber a l'interieur de la fonction pour permettre un nouveau tirage a chaque clique
+randomButton.addEventListener("click", () => {
+    var randomNumber = Math.floor(Math.random() * 18);
+    randomButton.innerHTML = prenom[randomNumber];
+})
