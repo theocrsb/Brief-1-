@@ -52,39 +52,22 @@ zoneaclique4.addEventListener("click", () => {
 
 let prenom = [
     'Paul',
-
     'Floriane',
-
     'Matthieu',
-
     'Theo',
-
     'Eric',
-
     'Josselin',
-
     'Philippe',
-
     'Johann',
-
     'Florian',
-
     'Michael',
-
     'Safae',
-
     'Nicolas',
-
     'Ludovic',
-
     'Mouss',
-
     'Rony',
-
-    'Etienne Etourdi',
-
-    'Etienne Entrainant',
-
+    'Etienne',
+    'Etienne',
     'Soeli'
 ]
 var min = 0;
@@ -96,4 +79,5 @@ let randomButton = document.getElementById("random")
 randomButton.addEventListener("click", () => {
     var randomNumber = Math.floor(Math.random() * 18);
     randomButton.innerHTML = prenom[randomNumber];
+    // setTimeout(randomButton.innerHTML = prenom["RANDOM APPRENANT"], 3000);
 })
