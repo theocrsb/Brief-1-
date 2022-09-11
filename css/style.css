@@ -94,6 +94,17 @@ h1 {
 }
 
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.row {
+    padding-top: 15%;
+}
+
 /* Larger than phablet (also point when grid becomes active) 
 reponsive pour le bouton */
 @media (max-width: 550px) {
@@ -110,12 +121,7 @@ reponsive pour le bouton */
         padding-bottom: 0em;
     }
 
-    .header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
+
 
     .row {
         margin-top: 5em;
