@@ -83,6 +83,15 @@ li {
     padding: 2em;
 }
 
+h1,
+h2,
+h3 {
+    font-size: 1.8em;
+}
+
+h1 {
+    padding-left: 5%;
+}
 
 
 /* Larger than phablet (also point when grid becomes active) 
