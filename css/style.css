@@ -1,136 +1,144 @@
 body {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .header {
-    padding: 0.2rem 0.5rem;
-    margin: 0;
-    font-size: 90%;
-    background: #ffffff;
-    border: 1px solid #E1E1E1;
-    border-radius: 4px;
-    box-shadow: 0 10px 20px rgba(137, 137, 137, 0.2);
-    padding-bottom: 2em;
+  /* padding: 0.2rem 0.5rem; */
+  margin: 0;
+  font-size: 90%;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(137, 137, 137, 0.2);
 }
 
 ul {
-    list-style-image: url("../images/bullet.png");
+  list-style-image: url("../images/bullet.png");
 }
 
 span {
-    font-size: x-small;
+  font-size: x-small;
 }
 
 /* row=entete avec le bouton acces charte*/
 .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* padding: 2em; */
 }
 
 .row .column1,
 .column2 {
-    flex: 0 1 50%;
-    align-self: center;
-    padding: 0.5em;
+  flex: 0 1 50%;
+  align-self: center;
+  /* padding: 0.5em; */
+}
+
+.column1,
+.column2 {
+  padding: 4%;
 }
 
 .column2 {
-    padding-bottom: 5%;
-    display: block;
-    text-align: center;
+  padding-bottom: 5%;
+  display: block;
+  text-align: center;
+}
+
+.column1 {
+  padding-left: 0;
 }
 
 .charte {
-    background-color: rgb(207, 0, 0);
-    color: white;
-    border-radius: 0.4em;
+  background-color: rgb(207, 0, 0);
+  color: white;
+  border-radius: 0.4em;
 }
 
 .liste {
-    padding: 0.7em 1em;
-    margin: 0;
-    font-size: 90%;
-    background: #ffffff;
-    border: 1px solid #E1E1E1;
-    border-radius: 0.6em;
-    margin: 2em;
-    /* creation container flexbox */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    box-shadow: 0 10px 20px rgba(137, 137, 137, 0.2);
+  padding: 0.7em 1em;
+  margin: 0;
+  font-size: 90%;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.6em;
+  margin-top: 2em;
+  /* creation container flexbox */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 10px 20px rgba(137, 137, 137, 0.2);
 }
 
 /* child container */
 .liste h4,
 li {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
 }
 
 #randombot {
-    display: flex;
-    justify-content: center;
-    padding: 2em;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
 }
 
-h1,
 h2,
 h3 {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 h1 {
-    padding-left: 5%;
+  font-size: 2.1em;
+  padding-bottom: 1%;
 }
 
-
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .row {
-    padding-top: 15%;
+  padding-top: 80px;
 }
 
 /* Larger than phablet (also point when grid becomes active) 
 reponsive pour le bouton */
 @media (max-width: 550px) {
-    .row {
-        flex-wrap: wrap;
-    }
+  .row {
+    flex-wrap: wrap;
+  }
 
-    .row .column1,
-    .column2 {
-        flex: 0 1 90%;
-    }
+  .row .column1,
+  .column2 {
+    flex: 0 1 90%;
+  }
 
-    .column2 {
-        padding-bottom: 0em;
-    }
+  .column2 {
+    padding-bottom: 0em;
+  }
 
+  .row {
+    margin-top: 5em;
+  }
 
+  .container h4 {
+    margin-top: 0.6em;
+  }
 
-    .row {
-        margin-top: 5em;
-    }
-
-    .container h4 {
-        margin-top: 0.6em;
-    }
-
+  .row {
+    padding-top: 40px;
+  }
 }
 
 /* display none pour faire disparaitre.
