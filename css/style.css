@@ -3,7 +3,6 @@ body {
 }
 
 .header {
-  /* padding: 0.2rem 0.5rem; */
   margin: 0;
   font-size: 90%;
   background: #ffffff;
@@ -28,14 +27,12 @@ span {
   justify-content: center;
   align-content: center;
   align-items: center;
-  /* padding: 2em; */
 }
 
 .row .column1,
 .column2 {
   flex: 0 1 50%;
   align-self: center;
-  /* padding: 0.5em; */
 }
 
 .column1,
@@ -141,5 +138,8 @@ reponsive pour le bouton */
   }
 }
 
-/* display none pour faire disparaitre.
-si deja en display none, faire apparaitre */
+button:hover {
+  background-color: rgba(42, 42, 42, 0.8);
+  color: azure;
+  transition: ease-in-out 0.5s;
+}
